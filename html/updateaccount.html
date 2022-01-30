@@ -22,7 +22,7 @@
                 <form name="frmUpdate">
 
                     <div class="md-form md-outline">
-                        <span class="form-text light-blue-text"><i class="fas fa-signature"></i> Họ tên</span>
+                        <span class="form-text light-blue-text"><i class="fas fa-signature"></i> Họ và tên</span>
                         <input placeholder=" " name="fullname" ng-model="student.fullname" type="text" id="fullname" class="form-control border-primary" required maxlength="25" autofocus>
                         <small ng-show="frmUpdate.fullname.$error.required" class="form-text text-danger">Vui lòng nhập họ tên</small>
                         <small ng-show="frmUpdate.fullname.$error.maxlength" class="form-text text-danger">Không được quá 25 kí tự</small>
@@ -45,6 +45,10 @@
                         <input ng-model="student.gender" type="radio" class="form-check-input" id="gender2" name="gender" value="false">
                         <label class="form-check-label light-blue-text" for="gender2">Nữ</label>
                     </div>
+                    <div class="form-check form-check-inline">
+                        <input ng-model="student.gender" type="radio" class="form-check-input" id="gender2" name="gender" value="false">
+                        <label class="form-check-label light-blue-text" for="gender2">Sẽ gầy</label>
+                    </div>
 
 
                     <div class="md-form md-outline mt-0">
@@ -57,7 +61,7 @@
                         <span class="form-text light-blue-text"><i class="fas fa-money-bill"></i> Học phí</span>
                         <input placeholder=" " name="schoolfee" ng-model="student.schoolfee" type="text" id="schoolfee" class="form-control border-primary" required fee>
                         <small ng-show="frmUpdate.schoolfee.$error.required" class="form-text text-danger">Vui lòng nhập học phí</small>
-                        <small ng-show="!frmUpdate.schoolfee.$error.required && frmUpdate.schoolfee.$invalid" class="form-text text-danger">Học phí phải hơn 2 triệu</small>
+                        <small ng-show="!frmUpdate.schoolfee.$error.required && frmUpdate.schoolfee.$invalid" class="form-text text-danger">Học phí phải hơn 2.000.000 vnđ</small>
 
                     </div>
                     <div class="md-form md-outline">
