@@ -36,7 +36,6 @@ app.config(function($routeProvider, $locationProvider) {
         .when("/FAQ", { templateUrl: "html/FAQ.html" })
         .when("/login", { templateUrl: "html/login.html", controller: "loginCtrl" })
         .when("/register", { templateUrl: "html/register.html", controller: "registerCtrl" })
-        .when("/forgotpassword", { templateUrl: "html/forgotpassword.html", controller: "forgotpasswordCtrl" })
         .when("/updateaccount", { templateUrl: "html/updateaccount.html", controller: "updateaccountCtrl" })
         .when("/changepassword", { templateUrl: "html/changepassword.html", controller: "changepasswordCtrl" })
         .when("/viewtest/:id", { templateUrl: "html/viewtest.html", controller: "viewtestCtrl" })
